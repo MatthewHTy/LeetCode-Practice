@@ -1,5 +1,5 @@
 // Two Sum Problem
-var twoSum = function(nums, target) {
+var twoSum = function (nums, target) {
     // for loop needed to run through the input of the integer array
     for (let i = 0; i < nums.length; i++) {
         for (let j = i + 1; j < nums.length; j++) {
@@ -10,4 +10,28 @@ var twoSum = function(nums, target) {
             }
         }
     }
- };
+};
+
+//  Fibonacci Sequence
+function fibonacciGenerator(n) {
+    //Do NOT change any of the code above 👆
+
+    //Write your code here:
+    let fibonacci = [];
+
+    if (n === 1) {
+        fibonacci = [0];
+    } else if (n === 2) {
+        fibonacci = [0, 1]
+    } else {
+        fibonacci = [0, 1]
+
+        for (let i = 2; i < n; i++)
+
+            fibonacci.push(fibonacci[fibonacci.length - 1] + fibonacci[fibonacci.length - 2])
+
+
+    }
+
+    return fibonacci;
+}
