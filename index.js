@@ -14,9 +14,7 @@ var twoSum = function (nums, target) {
 
 //  Fibonacci Sequence
 function fibonacciGenerator(n) {
-    //Do NOT change any of the code above 👆
-
-    //Write your code here:
+ 
     let fibonacci = [];
 
     if (n === 1) {
@@ -35,3 +33,5 @@ function fibonacciGenerator(n) {
 
     return fibonacci;
 }
+
+console.log(fibonacciGenerator(7));
